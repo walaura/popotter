@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walaura/potter.git"
+    "url": "git+https://github.com/walaura/popotter.git"
   },
   "keywords": [
     "potter"
@@ -16,14 +16,14 @@
   "author": "laura gonzalez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/walaura/potter/issues"
+    "url": "https://github.com/walaura/popotter/issues"
   },
-  "homepage": "https://github.com/walaura/potter#readme",
+  "homepage": "https://github.com/walaura/popotter#readme",
   "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.11.0"
   },
   "bin": {
-    "popotter": "bin/potter.js"
+    "popotter": "bin/popotter.js"
   }
 }
