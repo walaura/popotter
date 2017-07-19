@@ -1,0 +1,29 @@
+{
+  "name": "potter",
+  "version": "1.0.0",
+  "description": "Makes po files from a json",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walaura/potter.git"
+  },
+  "keywords": [
+    "potter"
+  ],
+  "author": "laura gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walaura/potter/issues"
+  },
+  "homepage": "https://github.com/walaura/potter#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.11.0"
+  },
+  "bin": {
+    "potter": "bin/potter.js"
+  }
+}

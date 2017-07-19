@@ -1,15 +1,21 @@
-const fs = require('fs');
-const re = /[e_]\(\"(.*?)\"/gmi;
-
 const tpl =
 `msgid "{msgid}"
-msgstr ""
+msgstr "{str}"
 
 `
 
-fs.readFile('./tpl.txt', 'utf8', function(err, data) {
-    if (err) throw err;
-    let matches = data.match(re).map(e => e.replace(re, '$1'));
-    let exported = matches.map(e =>tpl.replace('{msgid}',e));
-    console.log(exported.join(''));
-});
+module.exports = convert = strings => {
+
+    if(!strings) {
+        throw new Error('Missing strings');
+    }
+
+    let exported = [];
+    for (let i in strings) {
+        exported.push(
+            (tpl+'').replace('{msgid}',i).replace('{str}',strings[i])
+        )
+    }
+    return exported.join('');
+
+}
