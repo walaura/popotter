@@ -1,5 +1,5 @@
 {
-  "name": "potter",
+  "name": "popotter",
   "version": "1.0.0",
   "description": "Makes po files from a json",
   "main": "app.js",
@@ -24,6 +24,6 @@
     "commander": "^2.11.0"
   },
   "bin": {
-    "potter": "bin/potter.js"
+    "popotter": "bin/potter.js"
   }
 }

@@ -1,4 +1,4 @@
-# Potter
+# Popotter
 CLI tool that fetches strings from a json file and turns them into a .po file
 
 * well, it gives you the copypasteable contents
@@ -7,13 +7,13 @@ CLI tool that fetches strings from a json file and turns them into a .po file
 
 ## Usage
 
-	npm install potter -g
-  
+	npm install popotter -g
+
 you can also import it as a library and feed it json strings
 
-	const potter = require('potter');
+	const popotter = require('popotter');
 
-	const strings = potter({
+	const strings = popotter({
 		"hello": "Welcome to App™",
 		"body": "⚡️ Please have fun using App 🌈"
 	})
